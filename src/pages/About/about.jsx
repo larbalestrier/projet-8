@@ -1,11 +1,20 @@
-// Page About > Contient une bannière et le composant Collapsehome
+//IMPORT
+import './about.scss'
+//COMPONENTS
+import Collapse from '../../components/Collapse/Collapse'
+//ASSETS 
+import Banner from '../../assets/Image source 2.png'
+import Data from "../../assets/collapse.json";
+
+
+// Page About > Contient une bannière et le composant Collapse 
 function About() {
     return (
        <section>
-         ceux-ci est ma page about 
-          
+        <img className='BannerCont' alt='Paysage' src={Banner} />
+        <Collapse data={Data}/>
        </section>
     )
   }
   
-  export default About
+export default About

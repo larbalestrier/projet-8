@@ -3,7 +3,7 @@ import {Routes, Route} from 'react-router-dom';
 
 // PAGES
 import Home from './pages/Home/home'
-import About from './pages/About/about'
+import About from './pages/About/About'
 import Error from './pages/Error/error'
 import Location from './pages/Location/location'
 
