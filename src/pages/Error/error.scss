@@ -1,0 +1,22 @@
+.ContError{
+    color: #FF6060;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContError-title{
+    font-size: 288px;
+    margin: 0px;
+}
+
+.ContError-Text{
+    font-size: 38px;
+}
+.ContError-link{
+    margin-top: 100px;
+    padding-bottom: 100px;
+   color: #FF6060;
+   font-size: 18px;
+}

@@ -5,32 +5,44 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+  
     @media (max-width: 1001px) {
-        padding-inline: 0px;
-        }
-}
-
-.contCollapse-Title{
-    background: #FF6060;
-    color: white;
-    display: flex;
-    border-radius: 5px;
-    justify-content: space-between;
-    padding: 10px 20px 10px 15px;
-    margin-top: 0px;
-    
-}
-
-.contCollapse-Text{
-    color: #FF6060;
-    padding: 15px;
-    margin: 0px;
-    align-items: center;
-    background-color: #F6F6F6;
-}
+      padding-inline: 0px;
+    }
+  
+    &-Title {
+      background: #FF6060;
+      color: white;
+      display: flex;
+      border-radius: 5px;
+      justify-content: space-between;
+      padding: 10px 20px 10px 15px;
+      margin-top: 0px;
+    }
+  
+    &-Text {
+      color: #FF6060;
+      padding: 15px;
+      margin: 0px;
+      align-items: center;
+      background-color: #F6F6F6;
+    }
+  
+    &-Icon {
+      width: 24px;
+      height: 14px;
+      padding-top: 4px;
+    }
+  }
+// Collapse.scss
 
 .contCollapse-Icon {
-    width: 24px;
-    height: 14px;
-    padding-top: 4px;
+  width: 24px;
+  height: 14px;
+  padding-top: 4px;
+  transition: transform 0.3s; 
+}
+
+.contCollapse-Icon.rotate {
+  transform: rotate(180deg); 
 }

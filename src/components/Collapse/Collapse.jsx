@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import './Collapse.scss'
-import ArrowUpIcon from "../../assets/arrow-up.png";
-import ArrowDownIcon from "../../assets/arrow-down.png";
+import "./Collapse.scss";
+import ArrowIcon from "../../assets/arrow-up.png"; // Importez une seule image d'une flèche (dans n'importe quelle direction)
 
 function Collapse({ data }) {
   // Initialisation des états locaux pour contrôler l'état d'ouverture/fermeture de chaque élément
@@ -20,12 +19,12 @@ function Collapse({ data }) {
         <div key={item.id}>
           <h3 className="contCollapse-Title" onClick={() => handleToggle(index)}>
             {item.title}
-            {/* Affichage de l'icône d'expansion ou de contraction en fonction de l'état */}
-            {isOpenArray[index] ? (
-              <img src={ArrowUpIcon} alt="ArrowUp" className="contCollapse-Icon"/>
-            ) : (
-              <img src={ArrowDownIcon} alt="ArrowDown" className="contCollapse-Icon"/>
-            )}
+            {/* Ajoutez la classe "rotate" si l'élément est ouvert */}
+            <img
+              src={ArrowIcon}
+              alt="Arrow"
+              className={`contCollapse-Icon ${isOpenArray[index] ? "rotate" : ""}`}
+            />
           </h3>
           {/* Utilisation de l'état local pour afficher/masquer le paragraphe */}
           {isOpenArray[index] && <p className="contCollapse-Text">{item.text}</p>}
@@ -36,3 +35,4 @@ function Collapse({ data }) {
 }
 
 export default Collapse;
+
