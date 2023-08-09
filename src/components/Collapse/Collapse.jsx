@@ -16,7 +16,7 @@ function Collapse({ data, customClass }) {
   return (
     <section className={ customClass }>
       {data.map((item, index) => (
-        <div key={item.id} className="WidthCont">
+        <div key={index} className="WidthCont">
           <h3 className="contCollapse-Title" onClick={() => handleToggle(index)}>
             {item.title}
             {/* Ajoutez la classe "rotate" si l'élément est ouvert */}
