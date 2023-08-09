@@ -12,7 +12,7 @@ function About() {
     return (
        <section>
         <img className='BannerCont' alt='Paysage' src={Banner} />
-        <Collapse data={Data}/>
+        <Collapse data={Data} customClass="contCollapse"/>
        </section>
     )
   }

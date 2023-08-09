@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Collapse.scss";
-import ArrowIcon from "../../assets/arrow-up.png"; // Importez une seule image d'une flèche (dans n'importe quelle direction)
+import ArrowIcon from "../../assets/arrow-up.png";
 
-function Collapse({ data }) {
+function Collapse({ data, customClass }) {
   // Initialisation des états locaux pour contrôler l'état d'ouverture/fermeture de chaque élément
   const [isOpenArray, setIsOpenArray] = useState(data.map(() => false));
 
@@ -14,9 +14,9 @@ function Collapse({ data }) {
   };
 
   return (
-    <section className="contCollapse">
+    <section className={ customClass }>
       {data.map((item, index) => (
-        <div key={item.id}>
+        <div key={item.id} className="WidthCont">
           <h3 className="contCollapse-Title" onClick={() => handleToggle(index)}>
             {item.title}
             {/* Ajoutez la classe "rotate" si l'élément est ouvert */}
