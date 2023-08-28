@@ -6,6 +6,7 @@ import Error from '../Error/error';
 import Collapse from '../../components/Collapse/Collapse'
 import Rating from '../../components/Rating/rating';
 import './location.scss';
+
 function Location() {
     const [logement, setLogement] = useState(null);
     const { id } = useParams();
