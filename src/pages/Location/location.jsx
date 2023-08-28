@@ -21,7 +21,7 @@ function Location() {
     if (!logement) { // Si l'id n'existe pas, affiche la page d'erreur
       return (<Error />);
    }
-    // Crréer un JSON pour le passer en props au composant Collapsehome
+    // Créer un JSON pour le passer en props au composant Collapsehome
     const data = [
       {
          title: 'Description',

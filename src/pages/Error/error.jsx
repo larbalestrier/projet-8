@@ -7,7 +7,7 @@ function Error() {
         <section className="ContError">
             <h1 className="ContError-title">404</h1>
             <p className="ContError-Text"> Oups! La page que vous demandez n'existe pas.</p>
-            < Link to="/" className="ContError-link">Retourner sur la page d'acceuil</Link>
+            <Link to="/" className="ContError-link">Retourner sur la page d'acceuil</Link>
         </section>
     )
 }
