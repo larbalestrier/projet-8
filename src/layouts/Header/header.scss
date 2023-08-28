@@ -3,6 +3,10 @@
    justify-content: space-between;
    align-items: center;
    margin: 50px 0%;
+   @media (max-width: 1001px) {
+    margin-bottom: 15px;
+    margin-top: 25px;
+  }
  
    &-Link {
      color: #FF6060;
@@ -16,11 +20,10 @@
      }
  
      &.active {
-       text-decoration: underline;
- 
-       &:hover {
-         filter: brightness(0.9);
-       }
+       text-decoration: underline;     
+     }
+     &:hover{
+      text-decoration: underline;
      }
    }
  

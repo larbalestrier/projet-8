@@ -1,4 +1,7 @@
-.BannerCont{
+.aboutBanner{
     object-fit: cover;
     border-radius: 25px;
+    @media (max-width: 1001px) {
+        border-radius: 10px;
+    }
 }

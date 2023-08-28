@@ -11,7 +11,7 @@ import Data from "../../assets/collapse.json";
 function About() {
     return (
        <section>
-        <img className='BannerCont' alt='Paysage' src={Banner} />
+        <img className='BannerCont aboutBanner' alt='Paysage' src={Banner} />
         <Collapse data={Data} customClass="contCollapse"/>
        </section>
     )

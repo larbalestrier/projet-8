@@ -27,7 +27,7 @@ function Collapse({ data, customClass }) {
             />
           </h3>
           {/* Utilisation de l'état local pour afficher/masquer le paragraphe */}
-          {isOpenArray[index] && <p className="contCollapse-Text">{item.text}</p>}
+          {isOpenArray[index] && <div className="contCollapse-Text">{item.text}</div>}
         </div>
       ))}
     </section>

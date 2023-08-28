@@ -9,10 +9,19 @@
 .ContError-title{
     font-size: 288px;
     margin: 0px;
+    @media (max-width: 1001px) {
+        font-size: 96px;
+        padding-top: 50px;
+    }
 }
 
 .ContError-Text{
     font-size: 38px;
+    @media (max-width: 1001px) {
+        font-size: 18px;
+        text-align: center;
+        padding-inline: 50px;
+    }
 }
 .ContError-link{
     margin-top: 100px;
