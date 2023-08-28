@@ -1,7 +1,7 @@
 // IMPORTS
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/home';
-import About from './pages/About/About';
+import About from './pages/About/about';
 import Error from './pages/Error/error';
 import Location from './pages/Location/location';
 import Header from './layouts/Header/Header';
