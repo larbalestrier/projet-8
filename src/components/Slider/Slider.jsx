@@ -27,7 +27,7 @@ function Slider({ images }) {
          &&
          <> 
             {/* // Affiche le compteur d'image */}
-            <p className='CountSlider'>{currentIndex + 1} / {images.length}</p> 
+            <p className='CountSlider CountSlider-responsive'>{currentIndex + 1} / {images.length}</p> 
             
             {/* // Affiche les fleches de navigation, au click on passe a l'image suivante ou precedente */}
             <img className='ArrowSliderLeft' src={ArrowLeft} alt="Flèche gauche" onClick={nextImage} />

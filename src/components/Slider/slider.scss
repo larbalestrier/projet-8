@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
- 
     position: relative;
  }
  .ImgSlider {
@@ -37,4 +36,11 @@
  
     color: white;
     font-weight: 700;
+ }
+
+ .CountSlider-responsive{
+   @media (max-width: 1001px) {
+      display: none;
+   }
+      
  }
